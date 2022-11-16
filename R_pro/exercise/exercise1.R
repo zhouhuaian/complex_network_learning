@@ -4,7 +4,7 @@ print(new_list)
 new_mat <- matrix(1:6, nrow = 2)
 print(new_mat)
 
-print(1 > 2
-& 3 < 5)
+print(1 > 2 &
+    3 < 5)
 
 seq_len(nrow(x))
