@@ -15,16 +15,17 @@ shift <- function(df, offset) {
 }
 
 # Input project name here e.g. ant
-project_name <- "ant"
+project_name <- "axis2_java"
 
 pro_abs_path <- "E:\\Graduate\\Trustie\\Complex Networks\\R_pro"
 
-emails_file <- paste(pro_abs_path, "data", "ant_emails.csv", sep = "\\")
+emails_file <- paste(pro_abs_path, "data", "axis2_java_emails.csv", sep = "\\")
 emails <- read.csv(emails_file, header = FALSE, stringsAsFactors = FALSE)
 names(emails) <- c("from", "to", "date")
 emails$date <- as.POSIXct(emails$date)
 
-commits_file <- paste(pro_abs_path, "data", "ant_commits.csv", sep = "\\")
+commits_file <- paste(pro_abs_path, "data",
+                      "axis2_java_commits.csv", sep = "\\")
 commits <- read.csv(commits_file, header = TRUE, stringsAsFactors = FALSE)
 commits$committer_dt <- as.POSIXct(commits$committer_dt)
 
